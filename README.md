@@ -29,42 +29,51 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+# React Router Documentation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Routes
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### / - Main Page
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Description
+Renders the main page of the application.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### /login - User Login
 
-## Learn More
+#### Description
+Renders the user login page for authentication.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### /signup - User Signup
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Description
+Renders the user signup page for registering new users.
 
-### Code Splitting
+### /update-Password/:email - Update Password
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### Description
+Renders the update password page where users can update their passwords. Requires the email parameter in the URL.
 
-### Analyzing the Bundle Size
+### /view/:id - View Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### Description
+Renders a page to view user details. Requires the id parameter in the URL.
 
-### Making a Progressive Web App
+### /update/:id - Update Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+#### Description
+Renders a page to update user details. Requires the id parameter in the URL.
 
-### Advanced Configuration
+### /forgot-password - Forgot Password
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### Description
+Renders a page for users to reset their password if they have forgotten it.
 
-### Deployment
+### /verify-otp/:email - OTP Verification
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+#### Description
+Renders a page for OTP verification during the password reset process. Requires the email parameter in the URL.
 
-### `npm run build` fails to minify
+### /users/:otp/verify/:email - Email Verification
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Description
+Renders a page for email verification during the signup process. Requires the otp and email parameters in the URL.
